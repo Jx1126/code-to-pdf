@@ -23,13 +23,13 @@ files.forEach((file, index) => {
   const fileContents = fs.readFileSync(filePath, 'utf8');
 
   // Add the filename to the PDF
-  doc.font('Helvetica-Bold').fontSize(16).text(`"${file}":`, {
+  doc.font('Helvetica-Bold').fontSize(14).text(`"${file}":`, {
     underline: true,
   });
 
   // Add the file contents to the PDF
-  doc.font('Courier').fontSize(12).text(fileContents, {
-    paragraphGap: 10,
+  doc.font('Courier').fontSize(11).text(fileContents, {
+    paragraphGap: 5,
     indent: 20,
     align: 'left',
   });
@@ -43,4 +43,5 @@ files.forEach((file, index) => {
 // Finalize the PDF file
 doc.end();
 
-console.log(`PDF created at ${outputFilePath}`);
+console.log(`[ PDF created at ${outputFilePath} ]`);
+console.log(``);

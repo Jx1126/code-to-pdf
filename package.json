@@ -1,0 +1,15 @@
+{
+  "name": "codes-to-pdf",
+  "version": "1.0.0",
+  "description": "Convert codes into a single PDF file",
+  "main": "converter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "node converter.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  }
+}
