@@ -1,6 +1,6 @@
 # Codes to PDF Converter
 
-This program combines all the codes in the source_code folder into a single PDF document.
+This program combines all the codes in the `source_code` folder into a single PDF document.
 
 ## Features
 
